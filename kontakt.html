@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt os - Natur Telt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="naturtelt logo.svg" alt="Logo" class="logo">
+        </a>
+        <h1 class="site-title">Natur blog</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" >Forside</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt os</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Vi vil gerne høre fra dig!</h2>
+            <p>Har du spørgsmål, kommentarer eller brug for hjælp til at vælge det rigtige telt? Udfyld formularen nedenfor, og vores team vil hurtigst muligt vende tilbage til dig.</p>
+
+            <form action="submit_form.php" method="post">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Besked:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send besked</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html">
+                <img src="naturtelt logo.svg" alt="Logo" class="footer-logo">
+            </a>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="om-os.html">Om os</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="events.html">Kommende events</a></li>
+                    <li><a href="kontakt.html">Kontakt os</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-trust">
+            <img src="trustpilot.png" alt="Trustpilot" class="trust-image">
+        </div>
+    </footer>
+</body>
+</html>
