@@ -230,6 +230,10 @@ article {
 }
 
 @media (min-width: 768px) {
+     .nav-links a {
+        font-size: 14px; /* Juster denne størrelse efter behov */
+        padding: 5px 8px; /* Tilpas padding for bedre justering */
+    }
     .footer {
         flex-direction: row;
     }
