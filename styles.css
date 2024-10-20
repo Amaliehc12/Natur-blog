@@ -241,7 +241,7 @@ article {
 }
 
 @media (max-width: 780px) {
-     .nav-links a {
+     .nav-list {
         font-size: 12px; /* Juster denne størrelse efter behov */
         padding: 5px 8px; /* Tilpas padding for bedre justering */
     }
