@@ -26,10 +26,7 @@
             <h2>Vi vil gerne høre fra dig!</h2>
             <p>Har du spørgsmål, kommentarer eller brug for hjælp til at vælge det rigtige telt? Udfyld formularen nedenfor, og vores team vil hurtigst muligt vende tilbage til dig.</p>
 
-            <form
-                action="https://formspree.io/f/xldedrqo"
-                method="POST"
-            >
+            <form action="submit_form.php" method="post">
                 <label for="name">Navn:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -39,9 +36,32 @@
                 <label for="message">Besked:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <button type="submit">Send besked</button>
+                <button type="submit" class="cta-button">Send besked</button>
             </form>
             
+        </section>
+
+        <section>
+            <h2>Undersøg mere...</h2>
+            <div class="article-onwards">
+                <article>
+                    <h3>Om os</h3>
+                    <p>Find ud af hvem folkende bag Natur blog er og lær mere om vores histore og mission med bloggen.</p>
+                    <a class="cta-button" href="om-os.html">Læs mere</a>
+                </article>
+
+                <article>
+                    <h3>Blog</h3>
+                    <p>Find alle vores blog post og lad dig inspirer af en masse guides, ideer og gode råd til at nyde naturen.</p>
+                    <a class="cta-button" href="blog.html">Læs mere</a>
+                </article>
+
+                <article>
+                    <h3>Events</h3>
+                    <p>Find en oversigt over alle vores kommende events.</p>
+                    <a class="cta-button" href="events.html">Læs mere</a>
+                </article>
+            </div>
         </section>
     </main>
 
