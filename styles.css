@@ -230,10 +230,6 @@ article {
 }
 
 @media (min-width: 768px) {
-     .nav-links a {
-        font-size: 10px; /* Juster denne størrelse efter behov */
-        padding: 5px 8px; /* Tilpas padding for bedre justering */
-    }
     .footer {
         flex-direction: row;
     }
@@ -243,6 +239,13 @@ article {
         margin-left: auto; /* Skubber trust-logoet til højre på større skærme */
     }
 }
+
+@media (max-width: 780px) {
+     .nav-links a {
+        font-size: 10px; /* Juster denne størrelse efter behov */
+        padding: 5px 8px; /* Tilpas padding for bedre justering */
+    }
+ }
 
 .aside-right {
     float: left;
