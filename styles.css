@@ -1,3 +1,15 @@
+/* Typographi */
+
+p {
+    max-width: 600px;
+}
+
+h2, h3 {
+    color: #021f03;
+}
+
+/* Page structure */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,8 +23,29 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto; /* Hvis headerens højde skal autojusteres */
+    height: auto; 
     width: auto;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-onwards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Sørger for, at det fylder hele bredden */
+    box-sizing: border-box; /* Inkluderer padding og border i bredden */
 }
 
 .article {
@@ -22,7 +55,40 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%; /* Sørger for, at det fylder hele bredden */
+    box-sizing: border-box; /* Inkluderer padding og border i bredden */
 }
+
+article {
+    padding: 1em;
+    width: 90%;
+    border: 1px solid black;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section h2 {
+    color: #021f03;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    max-width: 800px; /* Juster bredden efter behov */
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+/* logo */
 
 .logo-container {
     display: flex;
@@ -32,13 +98,9 @@ header {
 
 .logo {
     height: 60px; /* Juster efter behov */
-    margin-bottom: 10px;
 }
 
-.site-title {
-    font-size: 2.5em;
-    margin: 0;
-}
+/* Navigation */
 
 nav {
     margin-top: 10px;
@@ -68,6 +130,9 @@ nav {
     color: #021f03;
 }
 
+/* Form */ 
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -86,66 +151,12 @@ form textarea {
     border-radius: 5px;
     font-size: 1em;
     width: 100%;
-    box-sizing: border-box; /* Sørger for, at padding og border ikke ændrer bredden */
-}
-
-form button {
-    padding: 10px;
-    background-color: #021f03;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-form button:hover {
-    background-color: white;
-    color: #021f03;
-    border: 1px solid #021f03;
-}
-
-main {
-    padding: 20px;
-    margin-top: 20px; /* Tilføjer lidt afstand mellem header og main */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrerer indholdet horisontalt */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-p {
-    max-width: 600px; /* Juster bredden efter behov */
-}
-
-h2, h3 {
-    color: #021f03;
+    box-sizing: border-box;
 }
 
 
-article img {
-    max-width: 100%; /* Gør billedet responsivt */
-    height: auto; /* Bevarer billedets proportioner */
-}
 
-.product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 15px;
-    width: 250px;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
+/* CTA */
 
 .cta-button {
     background-color: #021f03;
@@ -154,6 +165,7 @@ article img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -165,27 +177,17 @@ article img {
     color: #021f03;
 }
 
-article {
-    padding: 1em;
-    width: 90%;
-    border: 1px solid black;
-}
-
-.understreget::after {
-    content: " →"; /* Tilføjer pilen */
-    font-weight: bold; /* Gør pilen tykkere, hvis ønskes */
-    font-size: 1em; /* Justerer størrelsen af pilen */
-    color: black; /* Match farven med dine links */
-}
+/* Footer */
 
 .footer {
     background: #021f03;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     bottom: 0;
-    height: auto; /* Hvis headerens højde skal autojusteres */
+    height: auto;
     width: auto;
 }
 
@@ -193,87 +195,63 @@ article {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Fordeler indholdet horisontalt */
+    justify-content: space-between; 
     width: 100%;
-    max-width: 1200px; /* Justerer den maksimale bredde */
+    max-width: 1200px; 
     padding: 0 20px;
 }
 
 .footer-logo {
-    height: 50px; /* Juster højden efter behov */
-}
-
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center; /* Centrerer nav-listen */
-}
-
-.footer-nav li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-nav li a:hover {
-    color: #c5c5c5;
+    height: 50px;
+    margin: 10%;
 }
 
 .footer-trust {
-    margin-top: 20px; /* Tilføjer afstand over trust-logoet for mobil */
+    margin-top: 20px;
+    margin: 10%;
 }
 
 .trust-image {
     height: 40px; /* Juster højden efter behov */
 }
 
+/* Responsivnes */ 
+
 @media (min-width: 768px) {
     .footer {
         flex-direction: row;
     }
+}
 
-    .footer-trust {
-        margin-top: 0;
-        margin-left: auto; /* Skubber trust-logoet til højre på større skærme */
+@media (max-width: 768px) {
+    .nav-list {
+       font-size: 14px; /* Juster denne størrelse efter behov */
+       padding: 5px 8px; /* Tilpas padding for bedre justering */
+   }
+
+    .team-member {
+        flex-direction: column; /* Ændrer retningen til kolonne */
+        align-items: center; /* Centrerer indholdet */
+    }
+
+    .article-onwards{
+        flex-direction: column; /* Ændrer retningen til kolonne */
+        align-items: center; /* Centrerer indholdet */
+    }
+
+    .image-container {
+        width: 100%; /* Gør billedet bredt */
+    }
+
+    .text-container {
+        width: 100%; /* Gør teksten bredt */
+        padding: 10px 0; /* Tilføjer lidt afstand omkring teksten */
+        margin-left: 0; /* Fjerner venstre margin */
     }
 }
 
-@media (max-width: 780px) {
-     .nav-list {
-        font-size: 12px; /* Juster denne størrelse efter behov */
-        padding: 5px 8px; /* Tilpas padding for bedre justering */
-    }
- }
 
-.aside-right {
-    float: left;
-    width: 35%;
-    padding: 1em;
-    background-color: #888e88;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-section h2 {
-    color: #021f03;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-section p {
-    max-width: 800px; /* Juster bredden efter behov */
-    margin: 0 auto 20px auto;
-    line-height: 1.6;
-}
+/* media */
 
 video {
     width: 100%;
@@ -283,7 +261,13 @@ video {
     display: block;
 }
 
-/* Tidligere CSS her... */
+.bredt-billede {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Om os  styling*/
 
 .team-member {
     display: flex;
@@ -296,6 +280,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .image-container img {
@@ -323,15 +308,11 @@ video {
 }
 
 .team-member ul li {
-    margin: 5px 0;
-}
-
-.team-member ul li {
     margin: px 0;
-    text-align: left; /* Sørger for, at bullet points er venstrejusterede */
+    text-align: left;
 }
 
-/* Tidligere CSS her... */
+/* Events styling */ 
 
 .events-list {
     display: grid;
@@ -371,4 +352,3 @@ video {
 .event p {
     margin: 5px 0;
 }
-
