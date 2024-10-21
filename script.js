@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Vejr API
     const apiKey = '6aae32a10be8bef8171fbc3b973f7b90';
     const city = 'Copenhagen';
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=da`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=da`;
 
     fetch(url)
         .then(response => {
