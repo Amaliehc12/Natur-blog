@@ -6,7 +6,7 @@
 Natur Blog er designet til at inspirere brugere til at tilbringe mere tid udendørs. Hjemmesiden henvender sig til både erfarne friluftslivsfans og nybegyndere, der ønsker at finde tips, tricks og inspiration til aktiviteter som camping, vandreture og madlavning over bål. Kravene til hjemmesiden inkluderer:
 
 - **Brugervenlighed**: Siden er bygget intuitivet der gør det nemt for bruger at løse der opgaver på hjemmesiden. Den følger normale web standarder. og følger en rød trød gennem hele hjemmesiden for genkendlighed. 
-- **Responsivt design**: Hjemmesiden skal fungere på både desktop og mobile enheder, så brugerne nemt kan finde den frem når de er on the go.
+- **Responsivt design**: Hjemmesiden skal fungere på både desktop og mobile enheder, så brugerne nemt kan finde den frem når de er on the go. Hemmesiden er derfor optimeret ned til 410px. 
 - **Interaktivitet**: Der er opsat noget interaktivt, i form af muligheden for at vise flere blogindlæg på siden blog.html.
 
 
